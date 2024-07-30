@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: rgb(51, 34, 112);
+            text-align: center;
+            font-family:verdana
+        }
+        h2{
+            color:aqua;
+            font-size: 50px;
+        }
+        hr{
+            color: #24a113;
+        }
+    </style>
+    <body>
+        <h2>Job Application Form</h2><hr>
+        <form action= "/action_page.php"target="_blank">
+            <Label for="fname">Fist name:</Label> <br>
+            <input type="text"id="fname"name="fname"value="vivian"><br>
+            <label for="1name">last name:</label> <br>
+            <input type="text"id="1name" name="lname" value="Adewale"><br>
+            <p>Choose your gender</p>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="male">Male</label><br><br>
+            <label for="email">Email</label><br>
+            <input type="text"id="email"name="email" value="oluwajuwon.adelua@gmail.com"><br><br>
+            <label for="jobs">Jobs descriptions:</label>
+  <select id="jobs" name="jobs">
+    <option value="banking">Banking</option>
+    <option value="public admin">Public admin</option>
+    <option value="it personnal">IT personnal</option>
+    <option value="software engineer">Software engineer</option>
+    <option value="baker">Baker</option>
+    <option value="accountant">Accountant</option>
+    <option value="event planner">Event planner</option>
+    <option value="frontend developer">Frontend Developer</option>
+  </select> <br><br>
+  <input type="submit"value="submit">
+        </form><hr>
+
+
+    </body>
+
+</html>
