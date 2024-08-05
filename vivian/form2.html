@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comprehensive Student Academic Record Form</title>
+        <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff; 
+        }
+        h1 {
+            color: #4b0082;
+            text-align: center;
+        }
+        .form-section {
+            background-color: #ffffff;
+            border: 2px solid #add8e6; 
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .form-section h2 {
+            color: #1c6bac; 
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .results-table th, .results-table td {
+            border: 1px solid #ddd; 
+            padding: 8px;
+            text-align: left;
+        }
+        .results-table th {
+            background-color: #143d5f;
+            color: white;
+        }
+        .results-table td {
+            background-color: #f0f8ff; 
+        }
+        button {
+            background-color: #190429; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1d031d; 
+        }
+    </style>
+</head>
+    <body>
+            <h1>Comprehensive Academic School Record Form</h1>
+            <form action="/submit" method="post"></form>
+            <div class="form-section">
+                <h2>Primary School Information</h2>
+                <label for="primary-school-name">School Name</label>
+                <input type="text" id="primary-school-name" name="primary-school-name" required>
+                 
+
+                <label for="Secondary-school-result-file">Primary School Result:</label>
+            <input type="file" id="Primary" name="Primary" accept=".pdf, .jpg, .jpeg, .png" required>
+        </div>
+            
+            <!--Secondary School Result Section-->
+            <div class="form-section">
+                <h2>Secondary School Result</h2>
+                <label for="Secondary-school-name">School Name</label>
+                <input type="text" id="Secondary-school-name-file" name="Secondary-school-name" required>
+
+                <label for="Secondary-school-result-file">Secondary School Information:</label>
+            <input type="file" id="Secondary-school-result-file" name="Secondary-school-result-file" accept=".pdf, .jpg, .jpeg, .png" required>
+        </div>
+
+            <!--WAEC result section-->
+            <div class="form-section">
+                <h2>WAEC Results</h2>
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="waec-results">
+                        <tr>
+                            <td>
+                                <select name="waec-subject-1" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="Mathematics">Mathematics</option>
+                                    <option value="English Language">English Language</option>
+                                    <option value="Biology">Biology</option>
+                                    <option value="Chemistry">Chemistry</option>
+                                    <option value="Physics">Physics</option>
+                                    <option value="Government">Government</option>
+                                    <option value="History">History</option>
+                                    <option value="Literatue">Literature</option>
+                                    <option value="Physics">C.R.S</option>
+                                    <option value="Visual Art">Visual Art</option>
+                                    <option value="Buainess Studies">Business Studies</option>
+                                    <option value="Commerce">Commerce</option>
+                                    <option value="Insurance">Insurance</option>
+                                    <option value="Accounting">Accounting</option>
+                                    <!-- Add more subjects as needed -->
+                                </select>
+                            </td>
+                            <td>
+                                <select name="waec-grade-1" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="A1">A1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="B3">B3</option>
+                                    <option value="C4">C4</option>
+                                    <option value="C5">C5</option>
+                                    <option value="C6">C6</option>
+                                    <option value="D7">D7</option>
+                                    <option value="E8">E8</option>
+                                    <option value="F9">F9</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+    
+            <!-- NECO Results Section -->
+            <div class="form-section">
+                <h2>NECO Results</h2>
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="neco-results">
+                        <tr>
+                            <td>
+                                <select name="neco-subject-1" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="Mathematics">Mathematics</option>
+                                    <option value="English Language">English Language</option>
+                                    <option value="Biology">Biology</option>
+                                    <option value="Chemistry">Chemistry</option>
+                                    <option value="Physics">Physics</option>
+                                    <option value="Government">Government</option>
+                                    <option value="History">History</option>
+                                    <option value="Literatue">Literature</option>
+                                    <option value="Physics">C.R.S</option>
+                                    <option value="Visual Art">Visual Art</option>
+                                    <option value="Buainess Studies">Business Studies</option>
+                                    <option value="Commerce">Commerce</option>
+                                    <option value="Insurance">Insurance</option>
+                                    <option value="Accounting">Accounting</option>
+                                    <!-- Add more subjects as needed -->
+                                </select>
+                            </td>
+                            <td>
+                                <select name="neco-grade-1" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="A1">A1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="B3">B3</option>
+                                    <option value="C4">C4</option>
+                                    <option value="C5">C5</option>
+                                    <option value="C6">C6</option>
+                                    <option value="D7">D7</option>
+                                    <option value="E8">E8</option>
+                                    <option value="F9">F9</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-section">
+                <h2>Additional Information</h2>
+                <label for="additional-info">Please provide any additional information relevant to the student's academic record:</label>
+                <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+            </div>
+    
+            <!--submit button-->
+            <div class="form-section">
+                <button type="submit" >Submit</button>
+            </div>
+        </head> 
+ </body>
+</html>
