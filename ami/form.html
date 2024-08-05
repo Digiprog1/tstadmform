@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Personal Data</title>
+    <head> <h1 style="color: #ba7a13;">  Personal Information Form</h1> </head>
+    <body> 
+        <style>
+            input[type=text], select {
+                width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ba7a13;
+    display: inline-flex;
+    outline: none;
+    }
+    
+    
+    input[type=button] {
+    width: 25%;
+    background-color: #ba7a13;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #555;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display:button;
+    }
+    
+    input[type=button]:hover {
+    background-color: #ba7a13;
+    text-align: center;
+     }
+    body{
+background-color: #bebebe;
+text-align: left;
+    }
+    head{
+        color: #ba7a13;
+    }
+    label{
+        color: #ba7a13;
+    }
+        </style>
+        <form action="/action_page.php">
+             <label for="fname"> <strong>Name</strong></label><br>
+            <div>
+            <select id="title" name="title">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Doc">Doc.</option>
+                <option value="Pastor">Pastor</option>
+                </select required>
+                <input type="text" id="fname" name="fname" value="First name" required>
+                <input type="text" id="lname" name="lname" value="Last name" required>
+                <input type="text" id="mname" name="mname" value="Middle name" required>
+                <input type="text" id="inname" name="inname" value="Initials" required>
+            </div> <br>
+            <label for="gender"><strong>Gender</strong></label><br>
+            <div>
+             <input type="checkbox" id="female" name="female" value="Female" required>
+                <label for="female">Female</label><br>
+                <input type="checkbox" id="male" name="male" value="Male" required>
+                <label for="male">Male</label>
+            </div><br>
+             <label for="date"><strong> Date of Birth</strong></label>
+            <div>
+            <input type="datetime-local" id="date" name="date" required>
+        </div><br><br>
+        <label for="name"><strong>Preferred Contact Address</strong></label><br>
+        <div>
+        <input type="checkbox" id="Home" name="Home" value="Home" required>
+        <label for="Home">Home</label><br>
+        <input type="checkbox" id="work" name="work" value="work" required>
+        <label for="work">Work</label><br>
+        <input type="checkbox" id="other" name="other" value="other" required>
+         <label for="other">Other</label><br>
+        </div><br>
+        <label  for="Address"><strong>Address</strong></label><br>
+        <input type="text" id="stadd" name="stadd" value="Street Address" required><br>
+        <input type="text" id="stadd" name="stadd" value="Street Address Line 2" required><br>
+        <input type="text" id="city" name="city" value="City" required>
+        <input type="text" id="region" name="region" value="region" required><br>
+        <input type="text" id="postal" name="postal" value="Postal/zip code" required>
+        <input type="text" id="coun" name="coun" value="country" required><br><br>
+        <label for="Home Telephone Number"><strong>Home Telephone Number</strong></label><br>
+        <input type="text" id="stadd" name="stadd" value="### ### ####" required><br><br>
+        <label for="Mobile Number"><strong>Mobile Number</strong></label><br>
+        <input type="text" id="stadd" name="stadd" value="### ### ####" required><br><br>
+        <label for="Email"><strong>Email</strong></label><br>
+        <input type="stadd" name="stadd" value="example@gmail.com" required><br><br>
+        <input type="button"onclick="alert('You have submitted!')" id="submit" name="submit" value="SEND">
+        </form>
+    </body>
+    </html>
